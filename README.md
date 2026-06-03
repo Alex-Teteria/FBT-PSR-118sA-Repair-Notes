@@ -43,7 +43,7 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 
 * RV1 — 100 kΩ;
 * R7 — 1 MΩ.  
-[Фрагмент схеми із доданим DC Offset Adjustment](.//manual.pdf)
+[Фрагмент схеми із доданим DC Offset Adjustment](./schematics/DC_Offset_Adjustment.PDF)  
 
 ## Disclaimer
 
