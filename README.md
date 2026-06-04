@@ -86,6 +86,8 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 
 Після встановлення C1 обраного номіналу самозбудження не спостерігалося, рівень шуму в допустимих межах.
 
+<img width="926" height="773" alt="DC_Offset_Adjustment" src="https://github.com/user-attachments/assets/8fe893e1-14fe-4aff-886a-441151bbf638" />  
+
 [Фрагмент схеми із доданим DC Offset Adjustment](./schematics/DC_Offset_Adjustment.PDF)  
 Примітки:
 1. Схема є реконструкцією окремого вузла. Позиційні позначення компонентів (R1, C1, U1 тощо) введені автором для зручності опису та можуть не збігатися з маркуванням компонентів на оригінальній платі.
