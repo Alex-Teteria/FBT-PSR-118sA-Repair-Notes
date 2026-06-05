@@ -117,8 +117,8 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 | R6, R7 | Resistor SMD, 470R | Resistor SMD 0805, 470R, 1% |
 | D1 - D5 | Fast Switching Diode | LL4148 |  
 
-## Main board after repair  
-
+## 
+[Main board after repair](./photos/sub_main_board.jpg)
 
 ## Disclaimer
 
