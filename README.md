@@ -93,7 +93,7 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 - занадто малий номінал не забезпечує достатнього фазового запасу, що може призводити до самозбудження на окремих частотах;
 - занадто великий номінал змінює параметри кола глибокого зворотного зв'язку, призводить до зростання коефіцієнта підсилення на низьких частотах та супроводжується збільшенням рівня шуму на виході підсилювача.  
 
-Після встановлення C1 номіналом 0,15 мкФ самозбудження не спостерігалося, а рівень шуму залишався в допустимих межах.
+Експериментально було встановлено, що конденсатор C1 номіналом 0,15 мкФ забезпечує стійку роботу вузла без ознак самозбудження при збереженні прийнятного рівня шуму.
 
 <img width="926" height="773" alt="DC_Offset_Adjustment" src="https://github.com/user-attachments/assets/8fe893e1-14fe-4aff-886a-441151bbf638" />  
 
@@ -117,8 +117,9 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 | R6, R7 | Resistor SMD, 470R | Resistor SMD 0805, 470R, 1% |
 | D1 - D5 | Fast Switching Diode | LL4148 |  
 
-## 
-[Main board after repair](./photos/sub_main_board.jpg)
+## Main Board After Repair
+
+![Main board after repair](./photos/sub_main_board.jpg)
 
 ## Disclaimer
 
