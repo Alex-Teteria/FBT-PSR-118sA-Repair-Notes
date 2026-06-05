@@ -101,6 +101,18 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 2. RV1, R7 – додано під час ремонту для регулювання постійного зміщення.
 3. C1 був відсутній на платі, яка ремонтувалась. Встановлений під час ремонту для забезпечення стійкості вузла.
 
+## Repair of overload and short circuit protection unit
+При нестабільній роботі схеми (самозбудження ) та відключеній лінії захисту від основної плати (pin 19) в процесі відновлення стабільної роботи, відбувся вихід з ладу вузла "Overload and short circuit protection".
+<img width="1196" height="570" alt="image" src="https://github.com/user-attachments/assets/11636e71-20b3-425b-8d55-dd33b8a69391" />  
+Схема забезпечує захист підсилювача від перевантаження та короткого замикання на виході. При перевищенні допустимого рівня або тривалості сигналу формується логічний сигнал аварії, який подається на входи SD (Shutdown) обох драйверів IR2110 та блокує роботу силового каскаду.  
+Типи напівпровідникових елементів не вдалося достовірно визначити за маркуванням, тому для їх заміни на аналоги відповідно до функціонального призначення та режимів роботи.
+
+| PCB Designator | Function | Installed Component |
+|----------------|----------|---------------------|
+| Q1, Q2 | PNP Bipolar Transistor | MMBT6520L |
+| R6, R7 | Resistor SMD, 470R | Resistor SMD 0805, 470R, 1% |
+| D1 - D5 | Fast Switching Diode | LL4148 |  
+
 ## Disclaimer
 
 The schematic fragments published in this repository were reconstructed from PCB inspection and measurements and are provided for educational and repair documentation purposes. They are not official manufacturer documentation.  
