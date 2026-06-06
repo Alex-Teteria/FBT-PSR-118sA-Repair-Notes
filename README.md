@@ -138,10 +138,17 @@ Since no service documentation was available, the connector pinout was reconstru
 | 7   | -    | Not used |
 | 8   | SNS+ / Analog Input, DC-Coupled | Positive post-filter remote sense input to the differential feedback amplifier. Establishes system AC gain and maintains output DC offset at zero. |
 | 9   | SNS- / Analog Input, DC-Coupled | Negative post-filter remote sense input to the differential feedback amplifier. Establishes system AC gain and maintains output DC offset at zero. |
-| 2   | GND               | Common ground |
-| 2   | GND               | Common ground |
-| 2   | GND               | Common ground |
-| 3   | PROTECT           | Function inferred from circuit analysis |  
+| 10  | Hin A | High-side logic input for Bridge Arm A (to U2 (IR2110), pin 10) |
+| 11  | Hin B | High-side logic input for Bridge Arm B (to U3 (IR2110), pin 10) |
+| 12  | Lin A | Low-side logic input for Bridge Arm A (to U2 (IR2110), pin 12) |
+| 13  | Lin B | Low-side logic input for Bridge Arm B (to U3 (IR2110), pin 12) |
+| 14  | FAULT_IN | Overload and short circuit protection input. Raw error signal from main board to Schmitt trigger. |
+| 15  | Gnd | Main ground. Connected to IR2110 pin 2 (COM) and logic circuitry |
+| 16  | Gnd | - // - |
+| 17  | AC_DET (?) | AC-power-OFF mute (maybe). Goes to C1237 pin 4 |
+| 18  | OTP_IN | Over-temperature protection input from 120°C PTC thermistor F1 (6N) to C1237 pin 1 |
+| 19  | SD_OUT | Logic shutdown output to SD pin 11 of both IR2110 drivers |
+| 20  | +14.2V | Main logic supply voltage (input to L7805 regulator for +5V rail). |  
 
 ## Disclaimer
 
