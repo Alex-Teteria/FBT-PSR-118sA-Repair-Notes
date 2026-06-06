@@ -134,7 +134,12 @@ Since no service documentation was available, the connector pinout was reconstru
 | 3   | AGND  | Analog Ground |
 | 4   | +17V | Positive analog supply voltage (+17V) |
 | 5   | -17V | Negative analog supply voltage (-17V) |
-| 6   | ?    |  |
+| 6   | ?    | to analog board, pin 8 |
+| 7   | -    | Not used |
+| 8   | SNS+ / Analog Input, DC-Coupled | Positive post-filter remote sense input to the differential feedback amplifier. Establishes system AC gain and maintains output DC offset at zero. |
+| 9   | SNS- / Analog Input, DC-Coupled | Negative post-filter remote sense input to the differential feedback amplifier. Establishes system AC gain and maintains output DC offset at zero. |
+| 2   | GND               | Common ground |
+| 2   | GND               | Common ground |
 | 2   | GND               | Common ground |
 | 3   | PROTECT           | Function inferred from circuit analysis |  
 
