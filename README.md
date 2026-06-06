@@ -125,7 +125,7 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 
 To facilitate troubleshooting and testing, a custom adapter cable was built to access the PWM board outside the amplifier assembly.
 
-Since no service documentation was available, the connector pinout was reconstructed by PCB trace inspection, component analysis, and signal measurements.
+Since no service documentation was available, the connector pinout was reconstructed by PCB trace inspection, component analysis, and signal measurements.  
 
 | Pin | Signal / Function | Notes |
 |-----|-------------------|--------|
@@ -134,7 +134,7 @@ Since no service documentation was available, the connector pinout was reconstru
 | 3   | AGND  | Analog Ground |
 | 4   | +17V | Positive analog supply voltage (+17V) |
 | 5   | -17V | Negative analog supply voltage (-17V) |
-| 6   | ?    | to analog board, pin 8 |
+| 6   | ?    | Connected to Analog Board Pin 8 (function unknown) |
 | 7   | -    | Not used |
 | 8   | SNS+ / Analog Input, DC-Coupled | Positive post-filter remote sense input to the differential feedback amplifier. Establishes system AC gain and maintains output DC offset at zero. |
 | 9   | SNS- / Analog Input, DC-Coupled | Negative post-filter remote sense input to the differential feedback amplifier. Establishes system AC gain and maintains output DC offset at zero. |
@@ -143,12 +143,13 @@ Since no service documentation was available, the connector pinout was reconstru
 | 12  | Lin A | Low-side logic input for Bridge Arm A (to U2 (IR2110), pin 12) |
 | 13  | Lin B | Low-side logic input for Bridge Arm B (to U3 (IR2110), pin 12) |
 | 14  | FAULT_IN | Overload and short circuit protection input. Raw error signal from main board to Schmitt trigger. |
-| 15  | Gnd | Main ground. Connected to IR2110 pin 2 (COM) and logic circuitry |
-| 16  | Gnd | - // - |
-| 17  | AC_DET (?) | AC-power-OFF mute (maybe). Goes to C1237 pin 4 |
+| 15  | GND | Main ground. Connected to IR2110 pin 2 (COM) and logic circuitry |
+| 16  | GND | Same as Pin 15 |
+| 17  |AC_DET (unverified) | AC-power-OFF mute (maybe). Goes to C1237 pin 4 |
 | 18  | OTP_IN | Over-temperature protection input from 120°C PTC thermistor F1 (6N) to C1237 pin 1 |
 | 19  | SD_OUT | Logic shutdown output to SD pin 11 of both IR2110 drivers |
 | 20  | +14.2V | Main logic supply voltage (input to L7805 regulator for +5V rail). |  
+> This pinout was reconstructed from PCB trace analysis and measurements and has not been verified against manufacturer documentation.
 
 ## Disclaimer
 
