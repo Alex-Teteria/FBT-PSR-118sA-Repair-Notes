@@ -121,6 +121,23 @@ Repair notes, reconstructed schematic fragments, component replacements, and tro
 
 ![Main board after repair](./photos/sub_main_board.jpg)
 
+## PWM Board Connector Pinout
+
+To facilitate troubleshooting and testing, a custom adapter cable was built to access the PWM board outside the amplifier assembly.
+
+Since no service documentation was available, the connector pinout was reconstructed by PCB trace inspection, component analysis, and signal measurements.
+
+| Pin | Signal / Function | Notes |
+|-----|-------------------|--------|
+| 1   | AIN + | Analog Input Positive |
+| 2   | AIN-  | Analog Input Negative |
+| 3   | AGND  | Analog Ground |
+| 4   | +17V | Positive analog supply voltage (+17V) |
+| 5   | -17V | Negative analog supply voltage (-17V) |
+| 6   | ?    |  |
+| 2   | GND               | Common ground |
+| 3   | PROTECT           | Function inferred from circuit analysis |  
+
 ## Disclaimer
 
 The schematic fragments published in this repository were reconstructed from PCB inspection and measurements and are provided for educational and repair documentation purposes. They are not official manufacturer documentation.  
